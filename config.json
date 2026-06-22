@@ -1,0 +1,52 @@
+{
+  "tkg": {
+    "num_providers": 500,
+    "num_services": 2000,
+    "num_resources": 1000,
+    "num_relations": 5000,
+    "relation_types": ["TRUST", "SUPPORT", "OPPOSE", "NEUTRAL", "ALLIED", "CONFLICT"]
+  },
+  "gnn": {
+    "embed_dim": 128,
+    "num_layers": 2,
+    "num_heads": 4,
+    "dropout": 0.3,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-4,
+    "batch_size": 256,
+    "epochs": 200,
+    "trust_threshold": 0.6,
+    "sampling_size": 20
+  },
+  "metapaths": [
+    {"name": "PP_trust", "path": [["Provider","TRUST","Provider"]]},
+    {"name": "PP_trust2", "path": [["Provider","TRUST","Provider"],["Provider","TRUST","Provider"]]},
+    {"name": "SR_support", "path": [["Service","SUPPORT","Resource"]]},
+    {"name": "SR_oppose", "path": [["Service","OPPOSE","Resource"]]},
+    {"name": "SS_allied", "path": [["Service","ALLIED","Service"]]},
+    {"name": "PSR", "path": [["Provider","TRUST","Provider"],["Provider","TRUST","Service"]]},
+    {"name": "SRS", "path": [["Service","SUPPORT","Resource"],["Resource","SUPPORT","Service"]]},
+    {"name": "PSS", "path": [["Provider","TRUST","Service"],["Service","ALLIED","Service"]]},
+    {"name": "PPS", "path": [["Provider","TRUST","Provider"],["Provider","TRUST","Service"]]},
+    {"name": "RR_conflict", "path": [["Resource","CONFLICT","Resource"]]}
+  ],
+  "composition": {
+    "max_services": 50,
+    "max_resources": 50,
+    "qos_weights": {"reliability": 0.4, "response_time": 0.3, "cost": 0.3}
+  },
+  "experiment": {
+    "conflict_densities": [0.1, 0.2, 0.3, 0.4, 0.5],
+    "workflow_sizes": [5, 10, 20, 30, 50],
+    "icps_sizes": [1000, 1500, 2000, 2500, 3000],
+    "trust_thresholds": [0.5, 0.6, 0.7, 0.8]
+  },
+  "paths": {
+    "dataset": "data/raw/dataset.json",
+    "tkg_output": "output/tkg.json",
+    "embeddings": "output/embeddings.pt",
+    "results": "output/results.json",
+    "logs": "logs/"
+  },
+  "author": "H. Mezni"
+}
