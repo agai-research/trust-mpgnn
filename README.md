@@ -9,8 +9,8 @@
 **Trust-MPGNN** is a conflict- and trust-aware IoT service composition framework built around three key phases:
 
 1. **Trust Knowledge Graph (TKG) Construction** — Formalizes trust and conflict relations among ICPS entities (providers, IoT services, IoT resources) as a directed heterogeneous graph.
-2. **Metapath-Guided Trust Learning (Algorithm 1)** — Uses a GNN variant with attention-based aggregation along predefined trust meta-paths to learn node embeddings and predict latent trust/conflict relations.
-3. **Trust-Aware IoT Service Composition (Algorithm 2)** — Selects and composes non-conflicting, trustworthy IoT services and resources matching user workflow requirements via cosine-similarity matching in the trust embedding space.
+2. **Metapath-Guided Trust Learning** — Uses a GNN variant with attention-based aggregation along predefined trust meta-paths to learn node embeddings and predict latent trust/conflict relations.
+3. **Trust-Aware IoT Service Composition** — Selects and composes non-conflicting, trustworthy IoT services and resources matching user workflow requirements via cosine-similarity matching in the trust embedding space.
 
 ---
 
