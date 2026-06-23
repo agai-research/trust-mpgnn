@@ -243,4 +243,4 @@ Ten meta-paths are predefined in `src/tkg/metapaths.py`, covering the key trust 
 
 ## License
 
-For academic and research use. Author: **H. Mezni**, Jendouba University, Tunisia.
+For academic and research use.
