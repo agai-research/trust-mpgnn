@@ -217,16 +217,6 @@ Ten meta-paths are predefined in `src/tkg/metapaths.py`, covering the key trust 
 
 ---
 
-## Web Interface
-
-Open `web/index.html` in any modern browser (no server required):
-
-- **Left panel**: Select from 4 predefined IoT queries
-- **Right top**: Interactive TKG visualization (drag nodes, zoom)
-- **Right bottom**: Click **Compose** to see assigned services, resources, and trust metrics
-
----
-
 ## Output Files
 
 | File | Description |
