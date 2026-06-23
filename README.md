@@ -42,7 +42,7 @@ Trust-MPGNN/
 │   ├── gen_dataset.py           # ICPS hybrid dataset generator
 │   ├── split_dataset.py         # Creates experiment-specific instances
 │   ├── raw/
-│   │   └── dataset.json         # Main generated dataset (auto-created)
+│   │   └── dataset.json         # Main dataset
 │   └── instances/               # Per-experiment TKG instances (auto-created)
 │       ├── tkg_size_1000.json
 │       ├── tkg_density_10.json
