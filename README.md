@@ -1,7 +1,6 @@
 # Trust-MPGNN: Conflict-aware Composition of IoT Services
 
 > **Metapath-Guided Trust Learning for Intelligent Cyber-Physical Systems**
-> Author: **H. Mezni**
 
 ---
 
