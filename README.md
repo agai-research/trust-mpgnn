@@ -144,19 +144,19 @@ Tests all 4 predefined IoT queries on a small TKG (200 nodes). Results saved to 
 All experiment scripts are in `experiments/`. Each script loads the appropriate dataset instance, trains Trust-MPGNN, runs baselines, and saves results as JSON.
 
 ```bash
-# Exp 1: Impact of conflict density (Table 8)
+# Exp 1: Impact of conflict density
 python experiments/exp_conflict_density.py
 
-# Exp 2: Workflow complexity impact (Table 9)
+# Exp 2: Workflow complexity impact
 python experiments/exp_workflow.py
 
-# Exp 3: Trust threshold sensitivity (Table 10)
+# Exp 3: Trust threshold sensitivity
 python experiments/exp_threshold.py
 
-# Exp 4: Scalability — ICPS size (Figure in paper)
+# Exp 4: Scalability — ICPS size
 python experiments/exp_icps_size.py
 
-# Exp 5: Composition time vs conflict density (Table 11)
+# Exp 5: Composition time vs conflict density
 python experiments/exp_time_density.py
 ```
 
@@ -247,7 +247,7 @@ Open `web/index.html` in any modern browser (no server required):
 
 > F. Ghedass, H. Mezni, M. Alabdulhafith, H. Elmannai.
 > *Conflict-aware Composition of IoT Services: an Approach based on MetaPath-Guided Trust Learning.*
-> Internet of Things, Elsevier, 2026.
+> Software Practice and Experience, Wiley, 2026.
 
 ---
 
