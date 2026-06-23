@@ -49,19 +49,16 @@ Trust-MPGNN/
 │       └── ...
 │
 ├── experiments/
-│   ├── exp_conflict_density.py  # Exp 1: Quality vs conflict density (Table 8)
-│   ├── exp_workflow.py          # Exp 2: Quality vs workflow complexity (Table 9)
-│   ├── exp_threshold.py         # Exp 3: Trust threshold sensitivity (Table 10)
-│   ├── exp_icps_size.py         # Exp 4: Composition time vs ICPS size (Figure)
-│   └── exp_time_density.py      # Exp 5: Composition time vs conflict density (Table 11)
+│   ├── exp_conflict_density.py  # Exp 1: Quality vs conflict density
+│   ├── exp_workflow.py          # Exp 2: Quality vs workflow complexity
+│   ├── exp_threshold.py         # Exp 3: Trust threshold sensitivity
+│   ├── exp_icps_size.py         # Exp 4: Composition time vs ICPS size
+│   └── exp_time_density.py      # Exp 5: Composition time vs conflict density
 │
 ├── tests/
 │   └── test_prototype.py        # First-test: validate prototype on small TKG
 │
-├── web/
-│   └── index.html               # Interactive web UI (TKG view + composition)
-│
-├── output/                      # Generated results (auto-created)
+├── output/                      # Generated results
 │   ├── tkg.json
 │   ├── embeddings.pt
 │   ├── composition_result.json
