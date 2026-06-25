@@ -41,6 +41,7 @@ Trust-MPGNN/
 ├── data/
 │   ├── gen_dataset.py           # ICPS hybrid dataset generator
 │   ├── split_dataset.py         # Creates experiment-specific instances
+│   ├── build_hybrid_tkg.py      # Hybrid Yelp+CASAS dataset builder
 │   ├── raw/
 │   │   └── dataset.json         # Main dataset
 │   └── instances/               # Per-experiment TKG instances (auto-created)
